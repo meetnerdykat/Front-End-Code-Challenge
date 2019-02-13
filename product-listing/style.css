@@ -1,0 +1,672 @@
+/* CSS Variables */
+:root {
+  /* --primary: #545759; */
+  --accentColor: #edb81e;
+  --accentOpacity: #edb81ee6;
+  --linksColor: #cccccc;
+  --textColor: #444444;
+  --navBGColor: #222222;
+  --searchBoxBGColor: #eeeeee;
+  --searchBoxTextColor: #c4c4c4;
+  --footerBGColor: #3d3d3d;
+  --footerTopBorderColor: #eeb81a;
+  --footerTextColor: #c4c4c4;
+}
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra Small & Small devices (320px - 767.98px) */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    left: 12px;
+    top: 20px;
+    cursor: pointer;
+  }
+
+  .btn-line {
+    width: 28px;
+    height: 5px;
+    margin: 4px 0 8px 0;
+    border-radius: 2px;
+    background: #939393;
+  }
+
+  .brandLogo {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 90px;
+  }
+
+  .inputBox {
+    display: none;
+  }
+  .phoneIcon {
+    display: none;
+  }
+  .number {
+    display: none;
+  }
+  .cartIcon {
+    display: none;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .row2Img {
+    background: url(../assets/truck.png) center;
+    background-size: cover;
+    min-height: 200px;
+    margin-top: 25px;
+  }
+
+  .bannerMsg {
+    /* padding: 10px 12px; */
+    position: relative;
+    top: 215px;
+    left: 12px;
+    font-weight: bold;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 18px;
+  }
+
+  .bannerMsg h5 {
+    color: #939393;
+    padding: 4px 0;
+    font-weight: 500;
+  }
+
+  .resultsArea {
+    position: absolute;
+    top: 350px;
+  }
+
+  .showResults {
+    display: inline-block;
+    margin: 10px 0 10px 15px;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+
+  .showResults #sortWord {
+    margin-left: 200px;
+  }
+
+  .showResults #darrow {
+    padding-left: 8px;
+    color: #939393;
+  }
+
+  #showing,
+  #wordResults {
+    display: none;
+  }
+
+  .sortBy {
+    display: none;
+  }
+
+  .viewQuantity {
+    display: none;
+  }
+
+  .emptySpace {
+    min-height: 100px;
+  }
+
+  .productBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0;
+    border-bottom: 1.5px solid rgba(147, 147, 147, 0.2);
+  }
+
+  .productInfo {
+    margin-top: 15px;
+  }
+
+  .productInfo .title h2 {
+    display: inline-block;
+  }
+
+  .priceIn {
+    display: block;
+    font-size: 28px;
+    font-family: 'Roboto Black', sans-serif;
+    font-weight: 900;
+    padding-left: 5px;
+  }
+
+  .gridRows .productInfo .from {
+    font-size: 13px;
+    display: block;
+    padding-top: 30px;
+  }
+
+  .productInfo .price {
+    display: inline;
+    font-weight: bold;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 28px;
+  }
+
+  .paginationMobile {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .paginationMobile .fas {
+    color: #939393;
+    font-size: 60px;
+  }
+
+  .pagination {
+    display: none;
+  }
+
+  #prev {
+    padding: 0 30px 0 20px;
+  }
+
+  #next {
+    padding: 0 30px 0 20px;
+  }
+
+  .mainFooter {
+    min-height: 130px;
+    border-top: 10px solid #edb81e;
+    background: var(--footerBGColor);
+    color: var(--footerTextColor);
+    text-align: center;
+  }
+
+  .footerBrandLogo img {
+    padding: 20px 0px 0px 0px;
+    height: 50px;
+  }
+}
+
+/* Medium devices (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    left: 12px;
+    top: 20px;
+    cursor: pointer;
+  }
+
+  .btn-line {
+    width: 28px;
+    height: 5px;
+    margin: 4px 0 8px 0;
+    border-radius: 2px;
+    background: #939393;
+  }
+
+  .brandLogo {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 250px;
+  }
+
+  .inputBox {
+    display: none;
+  }
+  .phoneIcon {
+    display: none;
+  }
+  .number {
+    display: none;
+  }
+  .cartIcon {
+    display: none;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .row2Img {
+    display: grid;
+    grid-template-areas: 'row2Img';
+    min-height: 400px;
+    background: url(../assets/truck.png) center;
+    background-size: cover;
+    margin-top: 25px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .bannerMsg {
+    grid-area: row2Img;
+    background-color: var(--accentOpacity);
+    width: 100%;
+    padding: 10px 0px 20px 12px;
+    font-weight: bold;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 18px;
+  }
+
+  .bannerMsg h5 {
+    color: #939393;
+    padding: 4px 0;
+    font-weight: 500;
+  }
+
+  .showResults {
+    /* display: inline-block; */
+    float: left;
+    margin: 0 375px 0 12px;
+    padding: 20px 0;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+
+  .showResults #sortWord {
+    display: none;
+  }
+
+  .showResults #darrow {
+    display: none;
+  }
+
+  #showing,
+  #wordResults {
+    display: none;
+  }
+
+  .sortBy {
+    float: right;
+    margin-right: 12px;
+    padding: 20px 5px 20px 0px;
+  }
+
+  .viewQuantity {
+    float: right;
+    padding: 20px 5px 20px 0px;
+  }
+
+  select#per_page1 {
+    background: white;
+  }
+
+  select#sort1Select {
+    background: white;
+  }
+
+  .resultsArea {
+    background-color: #eeeeee;
+    min-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .gridRows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .productBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0;
+    border-bottom: 1.5px solid rgba(147, 147, 147, 0.2);
+  }
+
+  .productInfo {
+    margin-top: 15px;
+  }
+
+  .productInfo .title h2 {
+    display: inline;
+  }
+
+  .from {
+    font-size: 13px;
+    display: block;
+    margin-top: 35px;
+  }
+
+  .priceIn {
+    font-size: 28px;
+    font-family: 'Roboto Black', sans-serif;
+    font-weight: 900;
+    padding-left: 5px;
+    vertical-align: text-top;
+  }
+
+  .paginationMobile {
+    display: none;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  .pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
+
+  .pagination a.active {
+    background-color: #edb81e;
+    color: white;
+    border: 1px solid #edb81e;
+  }
+
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+
+  .pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .mainFooter {
+    min-height: 100px;
+    border-top: 10px solid #edb81e;
+    background: var(--footerBGColor);
+    color: var(--footerTextColor);
+    padding: 20px 0 0 12px;
+  }
+
+  .footerBrandLogo img {
+    float: right;
+    padding: 10px 12px 0 0;
+    height: 40px;
+  }
+}
+
+/* Large devices (992px - 2400px) */
+@media (min-width: 992px) and (max-width: 2400px) {
+  .wrapper {
+    margin: 0 50px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .btn-line {
+    display: none;
+  }
+
+  .row1Header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    box-sizing: border-box;
+    height: 65px;
+    padding: 10px;
+  }
+
+  div.brandLogo {
+    width: 600px;
+    padding-left: 20px;
+  }
+
+  .brandLogo img {
+    height: 44px;
+  }
+
+  #inputBox {
+    position: relative;
+    left: -40px;
+    width: 337px;
+    padding: 6px 5px 10px 5px;
+    float: right;
+    background: #eeeeee;
+    border: none;
+  }
+
+  input[type='text'],
+  input[type='color'] {
+    font-family: 'Roboto', cursive;
+    font-size: 18px;
+  }
+
+  #phoneIcon {
+    float: right;
+    font-size: xx-large;
+    margin-top: 12px;
+    padding-left: 5px;
+  }
+
+  .number {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 135px;
+  }
+
+  #numCall {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Roboto Black', sans-serif;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #msgId {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  #cartIcon {
+    font-size: xx-large;
+    margin-top: 12px;
+  }
+
+  .main-nav ul {
+    display: grid;
+    margin: 0;
+    padding-left: 30px;
+    list-style: none;
+    grid-template-columns: repeat(9, 1fr);
+    background-color: var(--navBGColor);
+    align-items: center;
+  }
+
+  .main-nav a {
+    color: var(--linksColor);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    font-size: 16px;
+  }
+
+  .main-nav a:hover {
+    color: var(--accentColor);
+  }
+
+  .row2Img {
+    display: grid;
+    grid-template-areas: 'row2Img';
+    min-height: 400px;
+    background: url(../assets/truck.png) center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .bannerMsg {
+    grid-area: row2Img;
+    background-color: var(--accentOpacity);
+    width: 400px;
+    margin: 12px;
+    padding: 30px 0px 30px 12px;
+    font-weight: bold;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .bannerMsg h5 {
+    color: #939393;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .showResults {
+    float: left;
+    margin: 0 375px 0 12px;
+    padding: 20px 0;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+
+  .showResults #sortWord {
+    display: none;
+  }
+
+  .showResults #darrow {
+    display: none;
+  }
+
+  .sortBy {
+    float: right;
+    margin-right: 12px;
+    padding: 20px 0;
+  }
+
+  .viewQuantity {
+    float: right;
+    padding: 20px 10px 20px 0px;
+  }
+
+  select#per_page1 {
+    background: white;
+  }
+
+  select#sort1Select {
+    background: white;
+  }
+
+  .resultsArea {
+    background-color: #eeeeee;
+    min-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .gridRows {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .productBox {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 40px 0 10px 0;
+    border-bottom: 1.5px solid rgba(147, 147, 147, 0.2);
+    justify-content: center;
+  }
+
+  .productInfo {
+    margin-top: 15px;
+  }
+
+  .title h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  .from {
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .priceIn {
+    font-size: 28px;
+    font-family: 'Roboto Black', sans-serif;
+    font-weight: 900;
+    padding-left: 5px;
+    vertical-align: text-top;
+  }
+
+  .paginationMobile {
+    display: none;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 0px 40px 0px;
+  }
+
+  .pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
+
+  .pagination a.active {
+    background-color: #edb81e;
+    color: white;
+    border: 1px solid #edb81e;
+  }
+
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+
+  .pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .mainFooter {
+    margin: 0 !important;
+    min-height: 100px;
+    border-top: 10px solid #edb81e;
+    background: var(--footerBGColor);
+    color: var(--footerTextColor);
+    padding: 20px 0 0 12px;
+  }
+
+  .footerBrandLogo img {
+    float: right;
+    padding: 10px 12px 0 0;
+    height: 40px;
+  }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 600, 700, 800, 900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Real Truck - Front End Dev Test</title>
+  </head>
+
+  <body>
+    <!-- START div wrapper-->
+    <div class="wrapper">
+      <!-- row contains mobile nav menu icon -->
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <div class="row1Header">
+        <!-- row contains brand, input, icon, text, text, icon-->
+        <div class="brandLogo">
+          <img src="../assets/realtruck_horizontal.svg" height="38" alt="" />
+        </div>
+        <div class="inputBox">
+          <input type="text" id="inputBox" placeholder="Search..." />
+        </div>
+        <div class="phoneIcon">
+          <i class="fas fa-phone fa-flip-horizontal" id="phoneIcon"></i>
+        </div>
+        <div class="number">
+          <span id="numCall">877-216-5446</span>
+          <span id="msgId">Sales & Service Hours</span>
+        </div>
+        <div class="cartIcon">
+          <i class="fas fa-shopping-cart" id="cartIcon"></i>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Exterior Accessories</a></li>
+          <li><a href="#">Interior Accessories</a></li>
+          <li><a href="#">Lighting</a></li>
+          <li><a href="#">Performance</a></li>
+          <li><a href="#">Specialty</a></li>
+          <li><a href="#">Suspension</a></li>
+          <li><a href="#">Wheels & Tires</a></li>
+          <li><a href="#">Shop By Brand</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- NAV END -->
+
+      <!--row contains backround image-->
+      <div class="row2Img">
+        <div class="bannerMsg">
+          <h5>Truck Accessories ></h5>
+          <h1>WHEELS & RIMS</h1>
+        </div>
+      </div>
+      <!-- 5th row contains search results on left sorting on right -->
+      <div class="resultsArea">
+        <div class="showResults">
+          <span id="showing">Showing</span> <span>1 - 30 of 422</span>
+          <span id="wordResults"> results</span> <span id="sortWord">SORT</span
+          ><span id="darrow"><i class="fas fa-angle-down"></i></span>
+        </div>
+        <!--  -->
+        <div class="sortBy">
+          <label id="sort1Label"><strong>Sort By: </strong></label>
+          <select name="sort1Select" id="sort1Select">
+            <option data-sort="12" value="" selected="selected"
+              >Recommended</option
+            >
+            <option data-sort="6" value="">Best Sellers</option>
+            <option data-sort="8" value="">Price Low To High</option>
+            <option data-sort="7" value="">Price High To Low</option>
+            <option data-sort="5" value="">Best Ratings</option>
+            <option data-sort="10" value="">New Items</option>
+          </select>
+        </div>
+        <div class="viewQuantity">
+          <label for="per_page1"><strong>Show: </strong> </label>
+          <select name="p" id="per_page1">
+            <option data-per-page="30" value="" selected="selected">30</option>
+            <option data-per-page="60" value="">60</option>
+            <option data-per-page="120" value="">120</option>
+          </select>
+        </div>
+      </div>
+      <!--  -->
+      <div class="emptySpace"></div>
+      <!-- 6th -17th rows contain 2 columns image on left text on right -->
+
+      <div class="gridRows">
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+        <div class="productBox">
+          <div class="productImg">
+            <img src="../assets/wheel.png" alt="" height="150" />
+          </div>
+          <!--  -->
+          <div class="productInfo">
+            <span class="title">
+              <h2>Fuel Black</h2>
+              <h2>Triton Wheels</h2>
+            </span>
+            <span class="from">From:<span class="priceIn">$160.00</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18th row contains pagination for Mobile -->
+      <div class="paginationMobile">
+        <i class="fas fa-angle-left fa-2x"></i>
+        <span id="prev">Previous</span>
+        <span id="next">Next</span><i class="fas fa-angle-right fa-2x"></i>
+      </div>
+      <!-- 19th row contains pagination for Tablet and Desktop plus -->
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+    <!-- END div wrapper-->
+    <!-- 20th row contains footer with brand and copyright info below, all centered -->
+    <footer class="mainFooter">
+      <div class="footerBrandLogo">
+        <img src="../assets/realtruck_horizontal.1.svg" alt="" />
+      </div>
+      <p>
+        ©Copyright 2017 <strong>RealTruck.com</strong><br />
+        ®.All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
